@@ -26,6 +26,8 @@ function fxc_init() {
 		add_action( 'admin_notices', 'fxc_fail_timezone' );
 	} else {
 		include_once FXC_PATH . 'vendor/autoload.php';
+		include_once FXC_PATH . 'includes/acf.php';
+		include_once FXC_PATH . 'includes/functions.php';
 	}
 }
 add_action( 'plugins_loaded', 'fxc_init' );
