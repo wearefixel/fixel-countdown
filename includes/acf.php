@@ -33,7 +33,7 @@ acf_add_local_field_group( [
 		[
 			'key' => 'field_5c4f4ba590eeb',
 			'label' => 'Custom Countdown Start',
-			'name' => 'fxc_countdown_start',
+			'name' => 'fxc_start',
 			'type' => 'date_time_picker',
 			'instructions' => '',
 			'required' => 1,
@@ -58,7 +58,7 @@ acf_add_local_field_group( [
 		[
 			'key' => 'field_5c4f4ba5910c8',
 			'label' => 'Custom Countdown End',
-			'name' => 'fxc_countdown_end',
+			'name' => 'fxc_end',
 			'type' => 'date_time_picker',
 			'instructions' => '',
 			'required' => 1,

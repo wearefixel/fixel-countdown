@@ -19,12 +19,12 @@ function fxc_get_timezone() {
 }
 
 function fxc_get_countdown_mode() {
-	return get_field( 'countdown_mode', 'option' );
+	return get_field( 'fxc_mode', 'option' );
 }
 
 function fxc_get_live_start() {
 	$datetime = 'custom' == fxc_get_countdown_mode()
-		? get_field( 'custom_countdown_start', 'option' )
+		? get_field( 'fxc_start', 'option' )
 		: (
 			Carbon::parse( fxc_get_default_end(), fxc_get_timezone() )->gt( fxc_get_now() )
 				? 'this ' . fxc_get_default_start()
@@ -36,7 +36,7 @@ function fxc_get_live_start() {
 
 function fxc_get_live_end() {
 	$datetime = 'custom' == fxc_get_countdown_mode()
-		? get_field( 'custom_countdown_end', 'option' )
+		? get_field( 'fxc_end', 'option' )
 		: (
 			Carbon::parse( fxc_get_default_end(), fxc_get_timezone() )->gt( fxc_get_now() )
 				? 'this ' . fxc_get_default_end()
