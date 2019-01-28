@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Fixel Countdown
- * Description:
+ * Description: A set of reusable ACF fields and helper functions for countdowns.
  * Version: 1.0.0
  * Author: Fixel
  * Author URI: https://wearefixel.com/
@@ -20,10 +20,12 @@ function fxc_init() {
 		add_action( 'admin_notices', 'fxc_fail_php_version' );
 	} elseif ( ! version_compare( get_bloginfo( 'version' ), FXC_MIN_WP, '>=' ) ) {
 		add_action( 'admin_notices', 'fxc_fail_wp_version' );
-	} elseif ( ! class_exists( 'acf_pro' ) {
+	} elseif ( ! class_exists( 'acf_pro' ) ) {
 		add_action( 'admin_notices', 'fxc_fail_acf' );
+	} elseif ( ! get_option( 'timezone_string' ) ) {
+		add_action( 'admin_notices', 'fxc_fail_timezone' );
 	} else {
-		// include plugin files
+		include_once FXC_PATH . 'vendor/autoload.php';
 	}
 }
 add_action( 'plugins_loaded', 'fxc_init' );
@@ -36,6 +38,10 @@ function fxc_fail_wp_version() {
 	echo '<div class="error"><p>Fixel Countdown requires WordPress version ' . FXC_MIN_WP . ', plugin is currently NOT ACTIVE.</p></div>';
 }
 
-function fxc_fail_ssp() {
+function fxc_fail_acf() {
 	echo '<div class="error"><p>Fixel Countdown requires <a href="https://www.advancedcustomfields.com/pro/" target="_blank">ACF Pro</a>, plugin is currently NOT ACTIVE.</p></div>';
+}
+
+function fxc_fail_timezone() {
+	echo '<div class="error"><p>Fixel Countdown requires a <a href="' . esc_url( admin_url( 'options-general.php' ) ) . '">timezone string</a> (e.g.: “Los Angeles” or “Chicago”) be set, plugin is currently NOT ACTIVE.</p></div>';
 }
