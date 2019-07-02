@@ -1,7 +1,7 @@
 === Fixel Countdown ===
 Contributors: fixel, galengidman
 Requires at least: 4.9.0
-Tested up to: 5.0.2
+Tested up to: 5.2.2
 Requires PHP: 7.0
 Stable tag: trunk
 
