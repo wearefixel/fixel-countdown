@@ -1,8 +1,8 @@
 <?php
 
-acf_add_options_page( [ 'page_title' => 'Countdown' ] );
+acf_add_options_page(['page_title' => 'Countdown']);
 
-acf_add_local_field_group( [
+acf_add_local_field_group([
 	'key' => 'group_5c4f4ba584c85',
 	'title' => 'Countdown',
 	'fields' => [
@@ -98,4 +98,4 @@ acf_add_local_field_group( [
 	'hide_on_screen' => '',
 	'active' => 1,
 	'description' => '',
-] );
+]);
