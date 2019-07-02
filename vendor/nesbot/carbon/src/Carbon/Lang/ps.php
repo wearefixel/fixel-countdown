@@ -1,6 +1,6 @@
 <?php
 
-/**
+/*
  * This file is part of the Carbon package.
  *
  * (c) Brian Nesbitt <brian@nesbot.com>
@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-return [
+return array(
     'year' => ':count کال|:count کاله',
     'y' => ':countکال|:countکاله',
     'month' => ':count مياشت|:count مياشتي',
@@ -28,5 +28,4 @@ return [
     'from_now' => ':time له اوس څخه',
     'after' => ':time وروسته',
     'before' => ':time دمخه',
-    'list' => ['، ', ' او '],
-];
+);

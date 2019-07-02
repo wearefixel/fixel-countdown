@@ -1,6 +1,6 @@
 <?php
 
-/**
+/*
  * This file is part of the Carbon package.
  *
  * (c) Brian Nesbitt <brian@nesbot.com>
@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-return [
+return array(
     'year' => 'rok|:count roky|:count rokov',
     'y' => 'rok|:count roky|:count rokov',
     'month' => 'mesiac|:count mesiace|:count mesiacov',
@@ -35,7 +35,4 @@ return [
     'hour_ago' => 'hodinou|:count hodinami|:count hodinami',
     'minute_ago' => 'minútou|:count minútami|:count minútami',
     'second_ago' => 'sekundou|:count sekundami|:count sekundami',
-    'first_day_of_week' => 1,
-    'day_of_first_week_of_year' => 4,
-    'list' => [', ', ' a '],
-];
+);

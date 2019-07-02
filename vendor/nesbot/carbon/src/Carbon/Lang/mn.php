@@ -1,6 +1,6 @@
 <?php
 
-/**
+/*
  * This file is part of the Carbon package.
  *
  * (c) Brian Nesbitt <brian@nesbot.com>
@@ -12,7 +12,7 @@
  * @translator Batmandakh Erdenebileg <batmandakh.e@icloud.com>
  */
 
-return [
+return array(
     'year' => ':count жил',
     'y' => ':count жил',
     'month' => ':count сар',
@@ -59,5 +59,4 @@ return [
     'hour_before' => ':count цагий',
     'minute_before' => ':count минуты',
     'second_before' => ':count секунды',
-    'list' => ', ',
-];
+);

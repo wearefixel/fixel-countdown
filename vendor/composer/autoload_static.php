@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit3d03687d826e5ad5bac92f561b87e2d4
+class ComposerStaticInit3b8c39ee841acf1f893dd898530d58e0
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -14,12 +14,8 @@ class ComposerStaticInit3d03687d826e5ad5bac92f561b87e2d4
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
-            'Symfony\\Contracts\\' => 18,
+            'Symfony\\Contracts\\Translation\\' => 30,
             'Symfony\\Component\\Translation\\' => 30,
-        ),
-        'C' => 
-        array (
-            'Carbon\\' => 7,
         ),
     );
 
@@ -28,25 +24,37 @@ class ComposerStaticInit3d03687d826e5ad5bac92f561b87e2d4
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
-        'Symfony\\Contracts\\' => 
+        'Symfony\\Contracts\\Translation\\' => 
         array (
-            0 => __DIR__ . '/..' . '/symfony/contracts',
+            0 => __DIR__ . '/..' . '/symfony/translation-contracts',
         ),
         'Symfony\\Component\\Translation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
         ),
-        'Carbon\\' => 
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
+    );
+
+    public static $prefixesPsr0 = array (
+        'U' => 
         array (
-            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+            'UpdateHelper\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/kylekatarnls/update-helper/src',
+            ),
         ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit3d03687d826e5ad5bac92f561b87e2d4::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit3d03687d826e5ad5bac92f561b87e2d4::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit3b8c39ee841acf1f893dd898530d58e0::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit3b8c39ee841acf1f893dd898530d58e0::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit3b8c39ee841acf1f893dd898530d58e0::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit3b8c39ee841acf1f893dd898530d58e0::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

@@ -1,6 +1,6 @@
 <?php
 
-/**
+/*
  * This file is part of the Carbon package.
  *
  * (c) Brian Nesbitt <brian@nesbot.com>
@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-return [
+return array(
     'year' => ':count metus|:count metus|:count metų',
     'y' => ':count metus|:count metus|:count metų',
     'month' => ':count mėnesį|:count mėnesius|:count mėnesių',
@@ -35,21 +35,4 @@ return [
     'from_now' => 'už :time',
     'after' => 'po :time',
     'before' => ':time nuo dabar',
-    'first_day_of_week' => 1,
-    'day_of_first_week_of_year' => 4,
-    'diff_now' => 'ką tik',
-    'diff_yesterday' => 'vakar',
-    'diff_tomorrow' => 'rytoj',
-    'diff_before_yesterday' => 'užvakar',
-    'diff_after_tomorrow' => 'poryt',
-    'period_recurrences' => 'kartą|:count kartų',
-    'period_interval' => 'kiekvieną :interval',
-    'period_start_date' => 'nuo :date',
-    'period_end_date' => 'iki :date',
-    'months' => ['Sausis', 'Vasaris', 'Kovas', 'Balandis', 'Gegužė', 'Birželis', 'Liepa', 'Rugpjūtis', 'Rugsėjis', 'Spalis', 'Lapkritis', 'Gruodis'],
-    'months_short' => ['Sau', 'Vas', 'Kov', 'Bal', 'Geg', 'Bir', 'Lie', 'Rgp', 'Rgs', 'Spa', 'Lap', 'Gru'],
-    'weekdays' => ['Sekmadienis', 'Pirmadienis', 'Antradienis', 'Trečiadienis', 'Ketvirtadienis', 'Penktadienis', 'Šeštadienis'],
-    'weekdays_short' => ['Sek', 'Pir', 'Ant', 'Tre', 'Ket', 'Pen', 'Šeš'],
-    'weekdays_min' => ['Se', 'Pi', 'An', 'Tr', 'Ke', 'Pe', 'Še'],
-    'list' => [', ', ' ir '],
-];
+);
