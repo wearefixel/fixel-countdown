@@ -1,5 +1,6 @@
 {
     "require": {
-        "nesbot/carbon": "^2.20"
+        "nesbot/carbon": "^2.20",
+        "yahnis-elsts/plugin-update-checker": "^4.6"
     }
 }

@@ -26,6 +26,13 @@ function fxc_init() {
 		add_action('admin_notices', 'fxc_fail_timezone');
 	} else {
 		include_once FXC_PATH . 'vendor/autoload.php';
+
+		Puc_v4_Factory::buildUpdateChecker(
+			'https://github.com/wearefixel/fixel-countdown/',
+			FXC_FILE,
+			'fixel-countdown'
+		);
+
 		include_once FXC_PATH . 'includes/acf.php';
 		include_once FXC_PATH . 'includes/functions.php';
 	}
