@@ -2,12 +2,12 @@
 /**
  * Plugin Name: Fixel Countdown
  * Description: A set of reusable ACF fields and helper functions for countdowns.
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: Fixel
  * Author URI: https://wearefixel.com/
  */
 
-define('FXC_VERSION', '1.1.0');
+define('FXC_VERSION', '1.1.1');
 define('FXC_FILE', __FILE__);
 define('FXC_PATH', plugin_dir_path(FXC_FILE));
 define('FXC_URL', plugin_dir_url(FXC_FILE));
