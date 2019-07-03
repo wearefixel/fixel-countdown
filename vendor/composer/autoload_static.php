@@ -17,6 +17,10 @@ class ComposerStaticInit3b8c39ee841acf1f893dd898530d58e0
             'Symfony\\Contracts\\Translation\\' => 30,
             'Symfony\\Component\\Translation\\' => 30,
         ),
+        'C' => 
+        array (
+            'Carbon\\' => 7,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -32,10 +36,10 @@ class ComposerStaticInit3b8c39ee841acf1f893dd898530d58e0
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
         ),
-    );
-
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
+        'Carbon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -53,7 +57,6 @@ class ComposerStaticInit3b8c39ee841acf1f893dd898530d58e0
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit3b8c39ee841acf1f893dd898530d58e0::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit3b8c39ee841acf1f893dd898530d58e0::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit3b8c39ee841acf1f893dd898530d58e0::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit3b8c39ee841acf1f893dd898530d58e0::$prefixesPsr0;
 
         }, null, ClassLoader::class);
